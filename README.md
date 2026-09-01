@@ -1,20 +1,36 @@
-# Expense Tracker
+# 💰 Expense Tracker
 
-A web application to manage daily expenses.
+A simple and responsive Expense Tracker web application built using HTML, CSS and JavaScript.
 
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
+## 🚀 Live Demo
 
-## Features
-- Add Expense
-- Delete Expense
-- Category wise expense
-- Date wise expense
-- Search Expense
-- Local Storage
-- Responsive Design
-
-## Live Demo
 https://menikasahu8080-hub.github.io/Expense-Tracker/
+
+## ✨ Features
+
+- ➕ Add expenses
+- 🏷️ Select expense category
+- 📅 Add expense date
+- 💰 Calculate balance
+- 💸 Calculate total expenses
+- 🗑️ Delete expenses
+- 🔎 Search expenses
+- 💾 Save expenses using Local Storage
+- 📱 Mobile responsive design
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Local Storage
+- GitHub Pages
+
+## 📂 Project Structure
+
+```text
+Expense-Tracker/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
