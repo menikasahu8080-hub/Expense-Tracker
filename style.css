@@ -1,114 +1,122 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #9face6);
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    min-height: 100vh;
+    padding: 30px 15px;
 }
 
 h1 {
     text-align: center;
-    color: white;
-    margin-top: 30px;
+    margin-bottom: 25px;
+    color: #222;
 }
 
 .container {
-    width: 380px;
-    margin: 30px auto;
+    max-width: 600px;
+    margin: auto;
     background: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-input,
-select,
-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 12px;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 16px;
+h2 {
+    margin-bottom: 20px;
+    color: #333;
 }
 
 input,
 select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
     border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #555;
 }
 
 button {
-    background: #4CAF50;
-    color: white;
+    width: 100%;
+    padding: 12px;
     border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
-    font-weight: bold;
 }
 
 button:hover {
-    background: #45a049;
+    opacity: 0.85;
+}
+
+#search {
+    margin-top: 10px;
 }
 
 h3 {
     margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-ul {
+p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+#expenseList {
     list-style: none;
-    padding: 0;
+    margin-top: 15px;
 }
 
-li {
+#expenseList li {
     background: #f5f5f5;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 8px;
-}
-li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f8f9fa;
     padding: 12px;
-    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 8px;
-    border-left: 5px solid #4CAF50;
+    border-left: 4px solid #222;
 }
 
-li button {
-    width: auto;
-    background: red;
-    padding: 8px 12px;
-    margin: 0;
-}
+/* Mobile Responsive */
 
-li button:hover {
-    background: darkred;
-}
 @media (max-width: 600px) {
 
-    .container {
-        width: 90%;
-        margin: 20px auto;
-        padding: 15px;
+    body {
+        padding: 20px 10px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 21px;
     }
 
     input,
     select,
     button {
-        font-size: 15px;
+        font-size: 14px;
     }
 
-    li {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    li button {
-        align-self: flex-end;
+    h3 {
+        font-size: 18px;
     }
 }
